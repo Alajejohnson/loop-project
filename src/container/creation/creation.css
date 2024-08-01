@@ -1,0 +1,115 @@
+.creation__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.creation__header h5{
+    font-size: 45px;
+    font-family: var(--Alata);
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+.creation button{
+    border: 2px solid var(--Black);
+    color: var(--Black);
+    background-color: var(--White);
+    padding: 1rem 3rem;
+    font-family: var(--Alata);
+    font-size: 18px;
+    cursor: pointer;
+}
+.creation button:hover{
+    color: var(--White);
+    background-color: var(--Black);
+    
+}
+.btn1{
+    display: none;
+}
+
+.creation__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.creation__grid__items {
+    position: relative;
+    cursor: pointer;
+
+}
+.creation__grid__items h5{
+    color: var(--White);
+    font-size: 25px;
+    font-family: var(--Alata);
+    font-weight: 400;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    width: 45%;
+}
+.creation__grid__items h5:hover{
+    color: var(--Black);
+}
+
+ .mobImg{
+    display: none;
+}
+.creation__grid__items img{
+    width: 100%;
+    height: 100%;
+}
+.creation__grid__items::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    top: 0;
+    background: var(--Dark-Gray);
+    opacity: 0.65;
+    
+}
+.creation__grid__items:hover::before{
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width: 550px){
+    .creation__content{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .creation__header{
+        flex-direction: column;
+    }
+    .creation__header h5{
+        font-size: 22px;
+    }
+    .mobImg{
+        display: block;
+        max-width: 100%;
+    }
+    .act{
+        display: none;
+    }
+    .creation__grid__items h5{
+        top: 30%;
+        font-size: 18px;
+    }
+    .btn1{
+        display: block;
+        margin: 2rem auto;
+    }
+    .creation button{
+        font-size: 16px;
+    }
+    .btn{
+        display: none;
+    }
+}
+@media only screen and (min-width:600px) and (max-width: 1200px){
+    .creation__content{
+        grid-template-columns: repeat(2, 1fr);
+      }
+}

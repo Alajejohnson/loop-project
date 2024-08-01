@@ -1,0 +1,17 @@
+.card__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.card__grid__items {
+    position: relative;
+
+}
+.card__grid__items h5{
+    color: var(--White);
+    font-size: 25px;
+    font-family: var(--Alata);
+    font-weight: 400;
+    position: absolute;
+    top: 90%;
+}
