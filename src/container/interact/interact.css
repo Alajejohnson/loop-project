@@ -13,14 +13,14 @@
     color: var(--Black);
 }
 .interact__info h5{
-    font-size: 45px;
+    font-size: 38px;
     font-family: var(--Alata);
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 7px;
 }
 .interact__info p{
-    font-size: 22px;
+    font-size: 18px;
     font-family: var(--Alata);
     font-weight: 400;
     color: var(--Dark-Gray);
